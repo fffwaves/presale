@@ -1,0 +1,34 @@
+---
+import Marquee from "@components/Marquee.astro";
+import withYou from "@assets/sbf-you.webp";
+---
+
+<div class="wrapper">
+  <Marquee
+    text="Sometimes you gotta believe in something "
+    speed="750"
+    fontSize="60"
+  />
+
+  <img src={withYou.src} alt="Be with Y" />
+
+  <Marquee text="✌️" speed="110" fontSize="120" />
+</div>
+
+<style>
+  .wrapper {
+    /* padding: 0 0 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+
+    img {
+      margin: 0 auto;
+    }
+  }
+
+  img:hover {
+    cursor: var(--cursor-active);
+  }
+</style>
